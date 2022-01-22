@@ -16,7 +16,6 @@ function printOutput(colour, value, symbol, format) {
         let pounds = value.split(".")[0];
         let overflow = pounds.length % 3;
         let sorted = "";
-        console.log(overflow);
         for (let i = 0; i < overflow; i++) {
             sorted += pounds[i];
         }
@@ -34,6 +33,10 @@ function printOutput(colour, value, symbol, format) {
         if (value[value.length - 1] === ".") {
             value = value.substr(0, value.length - 2);
         }
+    }
+
+    if (value.substr(0, 2) === "-,") {
+        value = "-" + value.substr(2);
     }
 
     animating = true;
