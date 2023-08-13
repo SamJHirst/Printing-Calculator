@@ -161,8 +161,6 @@ function KeyHandler({ setList, list, setValue, value }: KeyHandlerProps) {
         };
     }, [isResult, list, total, value]);
 
-    console.log(list, total, value);
-
     return null;
 }
 
