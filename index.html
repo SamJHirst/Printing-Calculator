@@ -1,32 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Money Calculator</title>
-        <link rel="stylesheet" href="static/css/style.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="plugins/printThis/printThis.js"></script>
-        <script src="static/js/calculator.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Printing Calculator</title>
     </head>
     <body>
-        <div id="help">
-            <h1>How to Use</h1>
-            <p>Use the number keys on your keyboard to input values. Values without a decimal point are assumed to be in pence. To count in pounds, add two zeros or a decimal point at the end of your input.</p>
-            <p>Use the + key to add to your total, and the - key to subtract from your total. When you're ready to calculate your total press the enter key.</p>
-            <p>To clear the current input, use the c key. Press it twice to clear your running total and show a clear operation on the output list.</p>
-            <p>To insert blank space on the output list, use the f key. To tear off your add list, use the t key.</p>
-            <p>You can format your output list by inputting a number and using the # key.</p>
-            <p>You can print your output list using the p key.</p>
-        </div>
-        <div id="app">
-            <div id="calc-wrapper">
-                <div id="input">
-                    <input type="text" value="0" />
-                </div>
-                <div id="output">
-                    <table>
-                        <tbody></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
     </body>
 </html>

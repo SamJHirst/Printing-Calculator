@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('../../../fonts/digital-7.ttf') format('truetype');
+}
+
+.inputBox {
+    border: solid 2px gray;
+    border-radius: 8px;
+    font-family: Digital-7;
+    font-size: 96px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    line-height: 48px;
+    margin-bottom: -4px;
+    margin-top: 24px;
+    overflow: hidden;
+    padding-bottom: 24px;
+    text-align: right;
+    width: calc(100% - 24px);
+}
+
+@media only screen and (max-width: 600px) {
+    .inputBox {
+        margin-bottom: 0;
+        width: calc(100% - 4px);
+    }
+}
+
+@media only print {
+    .inputBox {
+        display: none;
+    }
+}
