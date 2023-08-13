@@ -1,3 +1,3 @@
-import KeyHandler from './KeyHandler';
+import KeyHandler from './KeyHandler'
 
-export default KeyHandler;
+export default KeyHandler

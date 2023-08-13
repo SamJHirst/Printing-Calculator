@@ -1,7 +1,7 @@
-import './HelpBox.css';
+import './HelpBox.css'
 
-function HelpBox() {
-    return (
+function HelpBox () {
+  return (
         <div
             className="helpBox"
         >
@@ -15,7 +15,7 @@ function HelpBox() {
             </p>
             <p>
                 Use the + key to add to your total, and the - key to subtract from your total.
-                When you're ready to calculate your total press the enter key.
+                When you are ready to calculate your total press the enter key.
             </p>
             <p>
                 To clear the current input, use the c key. Press it twice to clear your running
@@ -32,7 +32,7 @@ function HelpBox() {
                 You can print your output list using the p key.
             </p>
         </div>
-    );
+  )
 }
 
-export default HelpBox;
+export default HelpBox

@@ -1,3 +1,3 @@
-import OutputList from './OutputList';
+import OutputList from './OutputList'
 
-export default OutputList;
+export default OutputList

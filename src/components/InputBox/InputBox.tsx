@@ -1,11 +1,11 @@
-import './InputBox.css';
+import './InputBox.css'
 
 interface InputBoxProps {
-    value: string;
+  value: string
 }
 
-function InputBox({ value }: InputBoxProps) {
-    return (
+function InputBox ({ value }: InputBoxProps) {
+  return (
         <div
             className="inputBox"
         >
@@ -13,7 +13,7 @@ function InputBox({ value }: InputBoxProps) {
                 value
             }
         </div>
-    );
+  )
 }
 
-export default InputBox;
+export default InputBox

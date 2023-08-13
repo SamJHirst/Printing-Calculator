@@ -1,19 +1,19 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-import HelpBox from './components/HelpBox/HelpBox';
-import InputBox from './components/InputBox';
+import HelpBox from './components/HelpBox/HelpBox'
+import InputBox from './components/InputBox'
 
-import ListItem from './types/ListItem';
+import type ListItem from './types/ListItem'
 
-import './App.css';
-import OutputList from './components/OutputList';
-import KeyHandler from './handlers/KeyHandler';
+import './App.css'
+import OutputList from './components/OutputList'
+import KeyHandler from './handlers/KeyHandler'
 
-function App() {
-    const [list, setList] = useState<ListItem[]>([]);
-    const [value, setValue] = useState<string>('0');
+function App () {
+  const [list, setList] = useState<ListItem[]>([])
+  const [value, setValue] = useState<string>('0')
 
-    return (
+  return (
         <>
             <KeyHandler
                 list={list}
@@ -42,7 +42,7 @@ function App() {
                 </div>
             </div>
         </>
-    );
+  )
 }
 
-export default App;
+export default App
