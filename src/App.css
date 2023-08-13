@@ -1,0 +1,40 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 32px);
+    padding: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.main {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    width: 66%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main {
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+@media only print {
+    .main {
+        width: 100%;
+    }
+}

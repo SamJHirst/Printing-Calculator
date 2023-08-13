@@ -1,0 +1,31 @@
+.outputList {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.outputList td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 20px;
+    text-align: right;
+}
+
+.outputList td:nth-of-type(2) {
+    padding-left: 24px;
+    width: 24px;
+}
+
+.outputList .red td {
+    color: red;
+}
+
+.outputList .blue td {
+    color: blue;
+}
+
+@media only print {
+    .outputList {
+        overflow: hidden;
+    }
+}
