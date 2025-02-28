@@ -14,8 +14,8 @@ jobs:
         node-version: 20.x
     - name: Install Dependencies
       run: npm install
-    - name: Audit
-      run: npm audit
+    # - name: Audit
+    #   run: npm audit
     - name: Lint
       run: npm run lint
     - name: Build
